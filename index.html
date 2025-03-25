@@ -191,15 +191,7 @@
             </section>
 
             <section>
-                <h2 class="text-2xl font-bold border-b-2 border-black mb-4">💡 Submit Your Idea</h2>
-                <form class="bg-gray-100 p-4 border-2 border-black">
-                    <input type="text" placeholder="Your Name" class="w-full p-2 mb-2 border-2 border-black">
-                    <input type="text" placeholder="Project Name" class="w-full p-2 mb-2 border-2 border-black">
-                    <textarea placeholder="Project Description" class="w-full p-2 mb-2 border-2 border-black" rows="4"></textarea>
-                    <button class="bg-black text-white p-2 w-full hover:bg-gray-800">
-                        Submit Project Idea
-                    </button>
-                </form>
+                <button class="bg-black text-white p-2 w-full hover:bg-gray-800">Submit Project Idea</button>
             </section>
         </main>
 
@@ -211,5 +203,11 @@
     <div class="fixed bottom-4 right-4 bg-black text-green-400 p-2 text-sm">
         Under Construction 🚧
     </div>
+    
+    <script>
+        document.querySelector('button').addEventListener('click', function() {
+            window.open('https://github.com/Shubham-Rasal/The-Weekend-Project/issues/new?title=Project+Idea&body=Project+Name:+%0A%0ATech+Stack:+%0A-%20%0A-%20%0A-%20%0A%0AProject+Description:+%0A%0AEstimated+Time:+15+hours%0A%0AImplementation+Roadmap:+%0A1.+%0A2.+%0A3.+%0A4.+%0A%0AResources:+%0A-%20', '_blank');
+        });
+    </script>
 </body>
 </html>
