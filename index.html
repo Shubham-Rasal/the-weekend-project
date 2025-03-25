@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Weekend Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            background-color: #C0C0C0;
+            font-family: monospace;
+        }
+        .blinky-cursor::after {
+            content: '_';
+            animation: blink 1s infinite;
+        }
+        @keyframes blink {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0; }
+        }
+    </style>
+</head>
+<body class="p-4 max-w-4xl mx-auto bg-gray-300">
+    <div class="bg-white border-4 border-black p-4 shadow-lg">
+        <header class="text-center border-b-4 border-black pb-4 mb-4">
+            <h1 class="text-4xl font-bold uppercase blinky-cursor">The Weekend Project</h1>
+            <p class="text-sm italic">15 Hours. One Weekend. Endless Possibilities.</p>
+        </header>
+
+        <main>
+            <section class="mb-6">
+                <h2 class="text-2xl font-bold border-b-2 border-black mb-4">🚀 Project Ideas</h2>
+                
+                <div class="project-card bg-gray-100 p-4 mb-4 border-2 border-black">
+                    <h3 class="font-bold text-xl">Android Voice Memo App</h3>
+                    <p class="mb-2">Craft a sleek voice memo app that transcribes and organizes your thoughts.</p>
+                    
+                    <div class="bg-white border-2 border-black p-2 mb-2">
+                        <strong>Tech Stack:</strong>
+                        <ul class="list-disc list-inside">
+                            <li>Expo</li>
+                            <li>React Native</li>
+                            <li>OpenAI Whisper</li>
+                            <li>Firebase for Storage</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white border-2 border-black p-2">
+                        <strong>Resources:</strong>
+                        <ul class="list-disc list-inside">
+                            <li><a href="https://expo.dev/" class="text-blue-600 underline">Expo Documentation</a></li>
+                            <li><a href="https://openai.com/research/whisper" class="text-blue-600 underline">OpenAI Whisper</a></li>
+                            <li><a href="https://reactnative.dev/" class="text-blue-600 underline">React Native Docs</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mt-2 bg-white border-2 border-black p-2">
+                        <strong>Estimated Time:</strong> 15 hours
+                    </div>
+                    
+                    <div class="mt-2 bg-white border-2 border-black p-2">
+                        <strong>Implementation Roadmap:</strong>
+                        <ol class="list-decimal list-inside">
+                            <li>Set up Expo development environment</li>
+                            <li>Implement basic UI with React Native</li>
+                            <li>Integrate OpenAI Whisper for transcription</li>
+                            <li>Add Firebase backend for storage</li>
+                        </ol>
+                        <p class="text-sm mt-2"><strong>Pro Tip:</strong> Use Expo's development build to test voice permissions on physical devices early. Mock Whisper API during initial development to avoid rate limits.</p>
+                    </div>
+                </div>
+
+                <div class="project-card bg-gray-100 p-4 mb-4 border-2 border-black">
+                    <h3 class="font-bold text-xl">Firecracker VM Testing Playground</h3>
+                    <p class="mb-2">Build a web interface for spinning up and managing lightweight VMs using Firecracker for rapid testing and development.</p>
+                    
+                    <div class="bg-white border-2 border-black p-2 mb-2">
+                        <strong>Tech Stack:</strong>
+                        <ul class="list-disc list-inside">
+                            <li>Firecracker VM</li>
+                            <li>React</li>
+                            <li>Go (for backend)</li>
+                            <li>Docker</li>
+                            <li>WebSocket</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white border-2 border-black p-2">
+                        <strong>Resources:</strong>
+                        <ul class="list-disc list-inside">
+                            <li><a href="https://github.com/firecracker-microvm/firecracker" class="text-blue-600 underline">Firecracker GitHub</a></li>
+                            <li><a href="https://firecracker-microvm.github.io/" class="text-blue-600 underline">Firecracker Documentation</a></li>
+                            <li><a href="https://aws.amazon.com/blogs/aws/firecracker-lightweight-virtualization-for-serverless-computing/" class="text-blue-600 underline">AWS Firecracker Overview</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mt-2 bg-white border-2 border-black p-2">
+                        <strong>Estimated Time:</strong> 15 hours
+                    </div>
+                    
+                    <div class="mt-2 bg-white border-2 border-black p-2">
+                        <strong>Implementation Roadmap:</strong>
+                        <ol class="list-decimal list-inside">
+                            <li>Set up Firecracker kernel and root filesystem</li>
+                            <li>Create backend API for VM management</li>
+                            <li>Develop React frontend with WebSocket integration</li>
+                            <li>Implement VM launch and termination workflows</li>
+                        </ol>
+                        <p class="text-sm mt-2"><strong>Pro Tip:</strong> Start with a single pre-configured VM template. Use Docker to simulate Firecracker environment during initial development. Be prepared for low-level networking challenges.</p>
+                    </div>
+                </div>
+
+                <div class="project-card bg-gray-100 p-4 mb-4 border-2 border-black">
+                    <h3 class="font-bold text-xl">Math Notes App with Excalidraw</h3>
+                    <p class="mb-2">Create an interactive math notes application leveraging Excalidraw's drawing capabilities for mathematical notation and diagrams.</p>
+                    
+                    <div class="bg-white border-2 border-black p-2 mb-2">
+                        <strong>Tech Stack:</strong>
+                        <ul class="list-disc list-inside">
+                            <li>Excalidraw</li>
+                            <li>React</li>
+                            <li>MathJax/KaTeX</li>
+                            <li>Firebase/Supabase</li>
+                            <li>WebRTC for Collaboration</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white border-2 border-black p-2">
+                        <strong>Resources:</strong>
+                        <ul class="list-disc list-inside">
+                            <li><a href="https://excalidraw.com/" class="text-blue-600 underline">Excalidraw Official Site</a></li>
+                            <li><a href="https://github.com/excalidraw/excalidraw" class="text-blue-600 underline">Excalidraw GitHub</a></li>
+                            <li><a href="https://www.mathjax.org/" class="text-blue-600 underline">MathJax Documentation</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mt-2 bg-white border-2 border-black p-2">
+                        <strong>Estimated Time:</strong> 15 hours
+                    </div>
+                    
+                    <div class="mt-2 bg-white border-2 border-black p-2">
+                        <strong>Implementation Roadmap:</strong>
+                        <ol class="list-decimal list-inside">
+                            <li>Integrate Excalidraw as base drawing component</li>
+                            <li>Add MathJax for LaTeX rendering</li>
+                            <li>Implement persistent storage with Firebase</li>
+                            <li>Build real-time collaboration using WebRTC</li>
+                        </ol>
+                        <p class="text-sm mt-2"><strong>Pro Tip:</strong> Fork Excalidraw locally to customize math-specific tools. Use browser's localStorage for quick offline support. Plan WebRTC signaling carefully.</p>
+                    </div>
+                </div>
+
+                <div class="project-card bg-gray-100 p-4 mb-4 border-2 border-black">
+                    <h3 class="font-bold text-xl">Personal AI Fitness Tracker</h3>
+                    <p class="mb-2">Build a machine learning-powered fitness companion that learns from your workouts.</p>
+                    
+                    <div class="bg-white border-2 border-black p-2 mb-2">
+                        <strong>Tech Stack:</strong>
+                        <ul class="list-disc list-inside">
+                            <li>TensorFlow.js</li>
+                            <li>React</li>
+                            <li>Node.js</li>
+                            <li>MongoDB</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="bg-white border-2 border-black p-2">
+                        <strong>Resources:</strong>
+                        <ul class="list-disc list-inside">
+                            <li><a href="https://www.tensorflow.org/js" class="text-blue-600 underline">TensorFlow.js Docs</a></li>
+                            <li><a href="https://nodejs.org/" class="text-blue-600 underline">Node.js Official Site</a></li>
+                            <li><a href="https://www.mongodb.com/" class="text-blue-600 underline">MongoDB Documentation</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="mt-2 bg-white border-2 border-black p-2">
+                        <strong>Estimated Time:</strong> 15 hours
+                    </div>
+                    
+                    <div class="mt-2 bg-white border-2 border-black p-2">
+                        <strong>Implementation Roadmap:</strong>
+                        <ol class="list-decimal list-inside">
+                            <li>Create data model for workout tracking</li>
+                            <li>Develop TensorFlow.js prediction model</li>
+                            <li>Build React frontend with exercise logging</li>
+                            <li>Implement machine learning insights</li>
+                        </ol>
+                        <p class="text-sm mt-2"><strong>Pro Tip:</strong> Start with a small, pre-defined dataset. Use transfer learning to bootstrap your ML model. Prioritize user input validation and data cleaning.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section>
+                <h2 class="text-2xl font-bold border-b-2 border-black mb-4">💡 Submit Your Idea</h2>
+                <form class="bg-gray-100 p-4 border-2 border-black">
+                    <input type="text" placeholder="Your Name" class="w-full p-2 mb-2 border-2 border-black">
+                    <input type="text" placeholder="Project Name" class="w-full p-2 mb-2 border-2 border-black">
+                    <textarea placeholder="Project Description" class="w-full p-2 mb-2 border-2 border-black" rows="4"></textarea>
+                    <button class="bg-black text-white p-2 w-full hover:bg-gray-800">
+                        Submit Project Idea
+                    </button>
+                </form>
+            </section>
+        </main>
+
+        <footer class="mt-6 text-center border-t-4 border-black pt-4">
+            <p>© 1997 The Weekend Project | Proudly Served Without Cookies 🍪</p>
+        </footer>
+    </div>
+
+    <div class="fixed bottom-4 right-4 bg-black text-green-400 p-2 text-sm">
+        Under Construction 🚧
+    </div>
+</body>
+</html>
